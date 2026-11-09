@@ -1,0 +1,9 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Autorização TikTok · Cronistas da Fé</title>
+<style>body{margin:0;font-family:Georgia,serif;background:#F2E8D5;color:#2B2118;line-height:1.6}header{background:#1B2A41;color:#F2E8D5;padding:28px 16px;text-align:center}main{max-width:720px;margin:0 auto;padding:28px 16px}code{display:block;background:#fff8ea;border:1px solid #e3d6b8;border-radius:8px;padding:12px;word-break:break-all;font-size:1rem}button{background:#1B2A41;color:#F2E8D5;border:0;border-radius:8px;padding:10px 16px;font-size:1rem;cursor:pointer}</style></head>
+<body><header><h1>Cronistas da Fé</h1><p>Autorização do TikTok</p></header>
+<main><h2 id="t">Autorização recebida</h2><p id="p">Copie o código abaixo e cole na janela do programa Cronistas da Fé no seu computador.</p>
+<code id="c">…</code><p><button onclick="navigator.clipboard.writeText(document.getElementById('c').textContent)">Copiar código</button></p>
+<p style="font-size:.9rem;color:#5a5045">Esta página é usada apenas pela equipe do canal. Nenhum dado é enviado a terceiros; o código fica só nesta tela.</p></main>
+<script>const q=new URLSearchParams(location.search);const code=q.get('code');const err=q.get('error');
+if(code){document.getElementById('c').textContent=code;}else if(err){document.getElementById('t').textContent='Autorização recusada';document.getElementById('p').textContent='Motivo: '+(q.get('error_description')||err);document.getElementById('c').textContent=err;}else{document.getElementById('t').textContent='Nada para mostrar';document.getElementById('p').textContent='Abra esta página a partir do fluxo de autorização do TikTok.';document.getElementById('c').textContent='—';}</script></body></html>
